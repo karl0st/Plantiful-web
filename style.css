@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +19,44 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > .menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+header > .menu > li {
+    margin-right: 20px;
+}
+
+header > .menu > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header > .menu > li > a:hover {
+    text-decoration: underline solid white 2px;
+}
+
+#hamburger {
+    display: none;
+    cursor: pointer;
 }
 
 .hero-text {
@@ -40,7 +80,103 @@ body {
     /* margin-bottom: 8rem; */
 }
 
-.video-section {
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+}
+
+.page-section {
+    max-width: 1200px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    height: 100%;
+}
+
+.right-section {
+    flex: 1;
+    width: 50%;
+}
+
+.page-section h2 {
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.page-section p {
+    font-weight: 300;
+    font-size: 1.7rem;
+    padding-top: 35px;
+}
+
+.page-section img {
+    height: 70%;
+    width: 90%;
+    max-width: 500px;
+    object-fit: cover;
+    padding: 0 35px;
+    /* box-shadow: 1px 7px 7px rgba(0, 0, 0, 0.25); */
+}
+
+.page-section.right-align-text {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+#uvod h2 {
+    font-size: 4.8rem;
+    line-height: 1.1;
+    font-weight: 700;
+    background: -webkit-linear-gradient(0deg, #BF835F -4.6%, #205950 71.8%), linear-gradient(0deg, #BF835F -4.6%, #205950 71.8%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#uvod h2 > span {
+    font-size: 6.2rem;
+}
+
+@media screen and (max-width: 700px) {
+    header > .menu {
+        display: none;
+    }
+    #hamburger {
+        display: block;
+    }
+    .page-section {
+        flex-direction: column;
+    }
+
+    .page-section img {
+        padding: 35px 0;
+    }
+
+    .page-section.right-align-text {
+        flex-direction: column;
+    }
+
+    .page-section.right-align-text > .left-section {
+        text-align: unset;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+}
+
+/* .video-section {
     padding: 5vw;
     text-align: center;
 }
@@ -56,7 +192,7 @@ body {
     height: 315px;
     margin: 0 auto;
     display: block;
-}
+} */
 
 .footer {
     padding: 25px;

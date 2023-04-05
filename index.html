@@ -3,30 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <!-- Primary Meta Tags -->
     <title>Plantiful</title>
+    <meta name="title" content="Plantiful">
+    <meta name="description" content="Protože na rostlinách nám záleží.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://plantiful.cz/">
+    <meta property="og:title" content="Plantiful">
+    <meta property="og:description" content="Protože na rostlinách nám záleží.">
+    <meta property="og:image" content="https://github.com/karl0st/Plantiful-web/raw/master/assets/background.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://plantiful.cz/">
+    <meta property="twitter:title" content="Plantiful">
+    <meta property="twitter:description" content="Protože na rostlinách nám záleží.">
+    <meta property="twitter:image" content="https://github.com/karl0st/Plantiful-web/raw/master/assets/background.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
     <div class="hero">
+        <header>
+            <img src="assets/logo.svg" alt="Plantiful" id="logo" height="24px">
+            <ul class="menu">
+                <li><a href="">Sekce</a></li>
+                <li><a href="">Sekce</a></li>
+                <li><a href="">Sekce</a></li>
+                <li><a href="">Sekce</a></li>
+                <li><a href="">Sekce</a></li>
+            </ul>
+            <a href="" id="hamburger"><img src="assets/hamburger.svg"></a>
+        </header>
         <div class="hero-text">
             <h1 class="hero-title">Plantiful</h1>
             <p class="hero-subtitle">Protože na rostlinách nám záleží.</p>
         </div>
     </div>
-
-    <div class="page-section video-section">
+    <div class="content">
+    <!-- <div class="page-section video-section">
         <h2>Promo video</h2>
         <div class="video-wrapper">
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/nLVRXiDevZY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        
+
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfpEh7MbHFyqswS9Bepn1wW0FpIu6oQlX8kMX5z2A2qwzcQGg/viewform?embedded=true" width="640" height="502" frameborder="0" marginheight="0" marginwidth="0">Načítání…</iframe>
+    </div> -->
+
+    <div class="page-section" id="uvod">
+        <div class="left-section">
+            <h2 id="gradient-heading">Vítej v&nbsp;ráji<br><span>Rostlin.</span></h2>
+            <p>Ať&nbsp;už jsi zahradník, nebo teprve začínáš s&nbsp;pěstováním rostlin, poskytneme ti plno informací.</p>
+        </div>
+        <div class="right-section">
+            <img src="assets/guy.svg" alt="Zahradník">
+        </div>
     </div>
 
+    <div class="page-section right-align-text" id="oblibena-rostlina">
+        <div class="right-section">
+            <h2 id="gradient-heading">Přidej&nbsp;si tvoji oblíbenou rostlinu!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis.</p>
+        </div>
+        <div class="left-section">
+            <img src="assets/my_plants.svg" alt="Moje rostliny">
+        </div>
+    </div>
+
+    <div class="page-section" id="info-rostlina">
+        <div class="right-section">
+            <h2 id="gradient-heading">Budeš o ní vědět vše.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.</p>
+        </div>
+        <div class="left-section">
+            <img src="assets/info.svg" alt="Info of rostlině">
+        </div>
+    </div>
+
+    <div class="page-section right-align-text" id="vyhledavani">
+        <div class="right-section">
+            <h2 id="gradient-heading">Vyhledávání, které nikdo jiný nemá.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.</p>
+        </div>
+        <div class="left-section">
+            <img src="assets/search.svg" alt="Vyhledávání">
+        </div>
+    </div>
+
+    <div class="page-section" id="rostlina-nebo-kvetina">
+        <div class="right-section">
+            <h2 id="gradient-heading">Revoluce v&nbsp;podobě interak&shy;tivního vyhledávání.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis.</p>
+        </div>
+        <div class="left-section">
+            <img src="assets/rostlina-nebo-kvetina.svg" alt="Rostlina, nebo květina?">
+        </div>
+    </div>
+
+    <div class="page-section right-align-text" id="priroda-a-technologie">
+        <div class="right-section">
+            <h2 id="gradient-heading">Jednoduše spoj přírodu a&nbsp;techno&shy;logie.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis.</p>
+        </div>
+        <div class="left-section">
+            <img src="assets/obeznameni.svg" alt="Skenování">
+        </div>
+    </div>
+    </div>
     <footer class="footer">
-        <p>Vytvořeno s láskou, tým Plantiful ❤️</p>
+        <p>Vytvořeno s&nbsp;láskou, tým Plantiful ❤️</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
